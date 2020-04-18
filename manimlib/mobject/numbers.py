@@ -50,7 +50,7 @@ class DecimalNumber(VMobject):
             )
 
         if self.unit is not None:
-            self.unit_sign = SingleStringTexMobject(self.unit, color=self.color)
+            self.unit_sign = SingleStringTexMobject(r"\ \text{" + self.unit + "}", color=self.color)
             self.add(self.unit_sign)
 
         self.arrange(
